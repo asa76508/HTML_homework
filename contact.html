@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルタオ:お問い合わせ</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        #container { margin: 0 auto; width: 70%; }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <table border="0" width="1024">
+        <tr>
+            <td id="logo" align="center" width="200">
+                <img src="images/logo1.jpg" width="60">
+            </td>
+            <td id="title" align="center"><h1>お問い合わせ</h1></td>
+        </tr>
+        <tr>
+            <td id="menu" align="center" valign="top">
+                <p><a href="index.html">ホームページ</a></p>
+                <p><a href="about.html">ルタオとは</a></p>
+                <p><a href="photos.html">ドゥーブルフロマージュ</a></p>
+                <p><a href="links.html">関連企業</a></p>
+                <p><a href="contact.html">お問い合わせ</a></p>
+            </td>
+            <td id="main" valign="top">
+                <form>
+                    <table border="0">
+                        <tr>
+                            <td>ニックネーム:</td>
+                            <td>
+                                <input type="text" name="nickname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">性別:</td>
+                            <td>
+                                <input type="radio" name="sex" value="1">男<!--將value數值放入變數sex-->
+                                <input type="radio" name="sex" value="2">女
+                                <input type="radio" name="sex" value="0">その他
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>興味あるもの:</td>
+                            <td>
+                                <input type="checkbox" name="inst" value="Cheesecake">ドゥーブルフロマージュ
+                                <input type="checkbox" name="inst" value="Chocolate">生チョコレート
+                                <input type="checkbox" name="inst" value="LangueDeChat">焼き菓子
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">地域:</td>
+                            <td>
+                                <select name="city">
+                                    <option>--------------</option>
+                                    <option value="1">東京都23区</option>
+                                    <option value="2">東京都23区以外</option>
+                                    <option value="3">北海道</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">意見：</td>
+                            <td>
+                                <textarea name="msg" rows="5" cols="30">内容をご入力ください
+-----------------------------
+お名前：
+年齢：
+ご住所：
+お電話：
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="reset" value="リセット">
+                                <input type="submit" value="確認">
+                                <!--submit按鈕，value為顯示出的文字-->
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
